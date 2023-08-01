@@ -16,7 +16,7 @@ pipeline {
         stage ('deploy') {
             steps {
                 sshagent(['newone']) {
-                    sh 'scp -r -o StrictHostKeyChecking=no build/** ec2-user@18.212.165.117:/home/ec2-user'
+                    sh 'scp -r -o StrictHostKeyChecking=no build/** ec2-user@3.85.125.66:/home/ec2-user'
             }
         }
     }
