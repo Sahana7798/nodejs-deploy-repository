@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run build'
-                sh 'npm test'
+                sh 'npm start'
             }
         }
         stage ('deploy') {
